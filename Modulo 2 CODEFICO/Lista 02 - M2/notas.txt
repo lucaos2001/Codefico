@@ -1,0 +1,9 @@
+Joao, 8.5
+Maria, 9.0
+Pedro, 7.5
+Ana, 9.5
+Jorge, 2.9
+Pedro, 8
+Matheus, 9.2
+Thiago, 9
+Marcia, 8.3
