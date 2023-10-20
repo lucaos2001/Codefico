@@ -1,0 +1,152 @@
+<!--
+    Nesta lista de exercícios, você terá a oportunidade de criar uma página utilizando os elementos de listas (ordenadas e não ordenadas) e tabelas.
+
+Instruções:
+
+Título: Comece criando um documento HTML válido com uma estrutura básica, incluindo a declaração , as tags <html>, <head> e <body>. Defina um título apropriado para a página.
+
+Cabeçalho: No <body>, crie um cabeçalho (<h1>) que descreva o propósito da lista/tabela referente a questão. Por exemplo: ("Top 5 frutas favoritas").
+
+Você pode criar um documento HTML para cada questão ou fazer no mesmo documento, apenas tenha atenção com a organização do código.
+
+Questão 1: \
+
+Crie uma lista não ordenada (<ul>) com pelo menos 5 itens que representam suas metas para o próximo ano.
+Questão 2: \
+
+Faça uma lista ordenada (<ol>), utilizando o atributo (type = " i "), com as suas cinco frutas
+favoritas. \
+
+Questão 3: \
+
+Construa uma lista de descrição (<dl>) que represente seus hoobies favoritos. Cada item da lista deve consistir em um termo (o hobbie) (<dt>) seguido por uma breve descrição (<dd>).
+Questão 4: \
+
+Crie uma lista não ordenada (<ul>) que represente 3 estados (vocês poderão escolher) e aninhe listas não ordenadas (<ol>) com pelos menos 3 cidades de cada estado. Nessa questão estamos utilizando o conceito de listas aninhadas, basicamente são listas que estão contidas dentro de outros itens de uma lista. Como foi visto na aula, podemos utilizar uma lista dentro de outra lista.
+Questão 5: \
+
+Crie uma tabela que tenha produtos e o seus preços. Para isso crie uma linha cabeçalho (utilizando (<tr>) e (<th>) ) para ter a coluna de produtos e a coluna de preço, em seguida preencha a as células da tabela com os produtos e seus respectivos preços (utilizando (<tr>) e (<td>)), você pode escolher seus produtos e os seus valores. Não se preocupe com as bordas da tabela, iremos ver mais a frente com o CSS.
+
+Exemplo:
+Temos os produtos com seus preços: Chinelo = 25,00 reais , Sapato = 200,00 reais e Bermuda = 75,00 reais.
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listas e Tabelas HTML</title>
+    <style>
+        table,td,tr,th {
+            border: 1px dotted black;
+        }
+    </style>
+    <!--Resolvi implementar o css mostrado durante a aula
+    do professor Matheus-->
+</head>
+<body>
+    <h1>Metas para o próximo ano.</h1>
+    <ul>
+        <li>Fazer exercícios regularmente.</li>
+        <li>Continuar melhorando meu inglês.</li>
+        <li>Me tornar um desenvolvedor.</li>
+        <li>Manter uma alimentação balanceada.</li>
+        <li>Não desperdiçar o tempo com coisas futeis.</li>
+    </ul>
+    <h1>Frutas favoritas.</h1>
+    <ol type="i">
+        <li>Laranja</li>
+        <li>Melancia</li>
+        <li>Uva</li>
+        <li>Manga</li>
+        <li>Tomate</li>
+    </ol>
+    <h1>Hobbies</h1>
+    <dl>
+        <dt>Jogar</dt>
+        <dd>Jogar jogos eletrônicos com meus amigos.</dd>
+        <dt>Caminhada</dt>
+        <dd>Caminhar em meio a natureza e apreciar sua beleza.</dd>
+        <dt>Fotografia</dt>
+        <dd>Mostrar a beleza do mundo sob a minha perspectiva.</dd>
+    </dl>
+    <h1>Cidades</h1>
+    <ul>
+        <b>Minas Gerais</b>
+            <ul>
+                <li>São João del Rei</li>
+                <li>Belo Horizonte</li>
+                <li>São Thomé das Letras</li>
+            </ul>
+        <b>São Paulo</b>
+            <ul>
+                <li>São Paulo</li>
+                <li>Campinas</li>
+                <li>Guarulhos</li>
+            </ul>
+        <b>Rio de Janeiro</b>
+            <ul>
+                <li>Belford Roxo</li>
+                <li>Arraial do Cabo</li>
+                <li>Nilópolis</li>
+            </ul>
+    </ul>
+    <h1>Tabela de Produtos</h1>
+    <table>
+        <tr>
+            <th>Produtos</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Resident Evil 4</td>
+            <td>R$150,00</td>
+        </tr>
+        <tr>
+            <td>Mad Max</td>
+            <td>R$45,00</td>
+        </tr>
+        <tr>
+            <td>Dark Souls 3</td>
+            <td>R$250,00</td>
+        </tr>
+    </table>
+
+    <!--Tentei reproduzir a questão 04 em forma de tabela.-->
+    <h1>Tabela para fixação do conteúdo</h1>
+    <table>
+        <tr>
+            <th>Estados</th>
+            <th>Cidades</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Minas Gerais</td>
+            <td>São João del Rei</td>
+        </tr>
+        <tr>
+            <td>Belo Horizonte</td>
+        </tr>
+        <tr>
+            <td>São Thomé das Letras</td>
+        </tr>
+        <tr>
+            <td rowspan="3">São Paulo</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>Campinas</td>
+        </tr>
+        <tr>
+            <td>Guarulhos</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Rio de Janeiro</td>
+            <td>Belford Roxo</td>
+        </tr>
+        <tr>
+            <td>Arraial do Cabo</td>
+        </tr>
+        <tr>
+            <td>Nilópolis</td>
+        </tr>
+    </table>
+</body>
+</html>

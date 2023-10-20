@@ -1,0 +1,77 @@
+Exercícios
+1 - Pergunta: Qual é a finalidade da declaração em um documento HTML? Qual é sua importância?
+
+2 - Pergunta: O que são elementos HTML? Explique brevemente o conceito.
+
+3 - Pergunta: Em HTML, como os elementos são estruturados geralmente? Descreva a estrutura básica de um documento HTML, incluindo as tags de abertura e fechamento.
+
+4 - Pergunta: O que são atributos em HTML e onde eles são normalmente encontrados em um elemento HTML? Dê um exemplo de um elemento HTML com atributos.
+
+5 - Pergunta: O que são elementos vazios em HTML? Forneça alguns exemplos de elementos vazios e explique por que eles são considerados vazios.
+
+6 - Pergunta: Explique a diferença entre elementos de bloco e elementos inline em HTML. Dê exemplos de cada um.
+
+7 - Pergunta: Qual é a diferença entre as tags <div> e <span> em HTML? Quando você usaria uma em vez da outra?
+
+8 - Pergunta: Qual atributo HTML permite abrir um link em uma nova janela ou guia do navegador? Dê um exemplo de como usar esse atributo.
+
+9 - Pergunta: Além do exemplo mencionado na aula, pesquise e liste pelo menos três meta informações que podem ser adicionadas a uma página HTML. Explique brevemente o propósito de cada uma delas.
+
+10 - Pergunta: Além das tags <b> e <i>, que outras tags de formatação HTML você conhece? Liste pelo menos duas tags adicionais e explique como elas são usadas.
+
+RESPOSTAS
+
+1 - Tem a finalidade de definir a versão HTML que está sendo usada e informa ao navegador qual a especificação 
+    ou padrão a ser seguido ao renderizar a página. Garante a interpretação correta e garante a 
+    consistência na renderização da página em diferentes navegadores.
+
+2 - Elementos HTML são os componentes fundamentais de uma página cuja função é estruturar e exibir o conteúdo.
+    Os elementos são aqueles que possuem chave "<>".
+
+3 - São estruturados de forma hierárquica. O HTML começa com a tag básica que é <!DOCTYPE> é uma tag de auto-fechamento 
+    que é usada para definir a versão do html que está sendo usada.Temos a tag <head>, é uma tag que necessita de uma tag 
+    de fechamento, o <head> é onde contém informações sobre o documento e que não exibidas diretamente na página web.
+    Temos a tag <body> que também necessita de sua tag de fechamento, e é onde contém o conteúdo que será exibido na página.
+
+4 - Os atributos são informações adicionais que são passadas dentro da tag de abertura para manipular um elemento.
+    Exemplo:    <a href="https://codefico.com.br" title="Site da codefico">Clique aqui</a>
+
+5 - São elementos que não possuem conteúdo entre suas tags de abertura e fechamento, são de auto fechamento. 
+    São considerados vazios pois não possuem conteúdo adicional entre suas tags.
+
+    A tag <br> é utilizada para dar uma quebra de linha.
+    A tag <img> é utilizada para adicionar uma imagem a página HTML.
+
+    Exemplo:    <img src="imagem.jpg" alt="minha imagem"> <br />
+
+6 - Os elementos em bloco são utilizados para criar divisões ou blocos de conteúdo podendo abranger uma grande quantidade 
+    de conteúdo, uma característica dos elementos em bloco é que eles usam a linha inteira. Os elementos inline são utilizados 
+    na manipulação de elementos específicos dentro do código, uma característica dos elementos inline é que eles não ocupam a linha toda.
+
+     Codigos:   <div>
+                    <h1>Div e H1 são elementos em block</h1>
+                    <p>Este é um elemento inline</p>
+                </div>
+
+7 - A tag "div" é usada para fazer divisões em blocos, além de ocupar uma linha inteira do html e a tag "span" é usada para 
+    fazer alterações em linha. A tag "div" teria mais utilidade sendo usada para fazer alterações de um bloco maior do código, 
+    já a tag "span" seria o contrário, como não ocupa uma linha inteira ela seria mais util na manupulação de uma pequena e específica parte do html.
+
+8 - Podemos utilizar a tag "a" e seu atributo "target" com o valor "_blank" que indicará que o link deve ser aberto em uma nova janela.
+
+    Codigo:     <a href="https://www.google.com.br/?hl=pt-BR" target="_blank">Google</a>
+
+
+9 - O "charset" é usada para definir o conjunto de caracteres que deve ser usado para interpretar o conteúdo da página. 
+    O "content-language" que é usado para definir a linguagem default do site.
+    O "keywords" fornece uma lista de palavras chave que são relevantes para a página web.
+     
+     Exemplos:      <meta charset="UTF-8">
+                    <meta name="keywords" content="HTML, css, javascript">
+                    <meta http-equiv="content-language" content="pt-BR">
+
+10 - Temos a tag <strong> que deixa o texto em negrito, semelhante a tag <b> e também a tag <ins>, que deixa o texto sublinhado.
+    
+     Exemplos:      <b>Tag b</b> <br />
+                    <strong>Tag strong</strong> <br />
+                    <ins>Tag ins</ins>
