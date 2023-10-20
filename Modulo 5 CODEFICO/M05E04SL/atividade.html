@@ -1,0 +1,58 @@
+<!--
+    Nesta lista de exercícios, você terá a oportunidade de práticar os conceitos da aula sobre seções. Nesta lista, iremos criar uma página de uma agência de turismo e essa agência têm três destinos que ela presta serviços. No exercício proposto iremos utilizar elementos que aprendemos para organizar nossa página por partes. Siga as instruções cuidadosamente.
+
+Instruções:
+
+Título: Comece criando um documento HTML válido com uma estrutura básica, incluindo a declaração , as tags <html>, <head> e <body>. Defina um título apropriado para a página.
+
+Definir parte: No <body>, defina uma parte na página usando a tag <div>.
+
+Cabeçalho: Na <div>, crie um cabeçalho <header> com o nome da agência (<h1>) e uma breve descrição (<p>).
+
+Destinos: Na <div>, abaixo do cabeçalho, implemente três seções (<section>), cada uma representando um destino de viagem, use o atributo id = "nome_do_destino" na tag <section> para identificar cada destino. Inclua em cada seção um título (<h2>) com nome do destino e uma página externa incorporada utlizando a tag <iframe>, essa página pode ser o wikipedia do destino. Acesse o wikipedia, pesquise o destino, copie e cola a url na tag <iframe>, utilize os atributos height="400" width="600" na tag <iframe> para ajustar o tamanho.
+
+Barra de navegação: Na <div>, depois do<header>, você irá inserir a tag <nav>, com links para cada seção. Como foi visto em aula, vocês utilizarão a tag <a> para cada seção. Em "href" vocês irão atribuir o "id" de cada seção, por exemplo: <a href="#cancun">Cancún </a>.
+
+Rodapé: No final da <div> inclua um rodapé (<footer>) contendo um parágrafo (<p>) com o nome do autor da página, por exemplo: "<p> Página criada por Lucas Leite </p>"
+
+Os destinos e informações vocês podem escolher.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aula 04 HTML</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Viajantes</h1>
+            <p>A melhor agência de viagens do país.</p>
+        </header>
+        <nav>
+            <a href="#osasco">Osasco</a> &gt;
+            <a href="#riobranco">Rio Branco</a> &gt;
+            <a href="#belfordroxo">Belford Roxo</a> <br />
+        </nav>
+        <section id="osasco">
+            <h2>Osasco</h2>
+            <iframe src="https://pt.wikipedia.org/wiki/Osasco" frameborder="5px" height="400" width="600"></iframe>
+        </section>
+        <section id="riobranco">
+            <h2>Rio Branco</h2>
+            <iframe src="https://pt.wikipedia.org/wiki/Rio_Branco" frameborder="5px" height="400" width="600"></iframe>
+        </section>
+        <section id="belfordroxo">
+            <h2>Belford Roxo</h2>
+            <iframe src="https://pt.wikipedia.org/wiki/Belford_Roxo" frameborder="5px" height="400" width="600"></iframe>
+        </section>
+        <footer>
+            <p>
+                Página criada por Lucas Carvalho. :P
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
