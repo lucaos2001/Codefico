@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>Atividade3</title>
+
+              <style>
+                div + h2 { /*Pega o primeiro elemento h2 após a div*/
+                    color: tomato;
+                    font-size: xx-large;
+                    text-align: center;
+                }
+                div ~ p { /*modifica todos os paragrafos apos a div*/
+                    color: rgb(255, 54, 47);
+                    font-size: larger;
+                }
+                div p { /* modifica todos os elementos p dentro da div*/
+                    background-color: blue;
+                }
+                div > h1 { /*modifica apenas os filhos da div*/
+                    color: greenyellow;
+                    font-size: 100px;
+                } 
+              </style>
+        </head>
+        <body>
+            <div>
+                <p>Paragrafos</p>
+                <p>Paragrafos</p>
+                <p>Paragrafos</p>
+                <p>Paragrafos</p>
+            </div>
+            <h2>Alinhado</h2>
+            <h2>H2 não afetado</h2>
+            <p>Teste01</p>
+            <p>Teste02</p>
+            
+            <div>
+                <h1>Olá Mundo!!</h1>
+            </div>
+        </body>
+</html>
