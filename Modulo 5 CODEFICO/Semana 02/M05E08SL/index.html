@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aula03CSS</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            bottom: 20px;
+            left: 20px;
+            border: 2px solid blue;
+            animation: mymove 10s infinite;
+        }
+        .relative-box {
+            position: relative;
+            top: 10px;
+            left: 10px;
+            border: 2px solid greenyellow;
+        }
+        .float-box {
+            float: right;
+            border: 2px solid rgb(255, 47, 193);
+        }
+        .z-index-box {
+            position: absolute;
+            z-index: 2;
+            background-color: rgb(211, 233, 10);
+        }
+        .rotate-box{
+            width: 150px;
+            height: 150px;
+            left: 50px;
+            transform: rotate(45deg);
+            background-color: rgb(10, 207, 233);
+        }
+        .translate-box {
+            transform: translateX(50px);
+            transform: translateY(50px);
+            border: 2px solid rgb(9, 82, 2);
+        }
+        @keyframes mymove {
+            from {left: 0px;}
+            to {left: 200px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        box
+    </div>
+    <div class="absolute-box">
+        absolute box
+    </div>
+    <div class="relative-box">
+        relative box
+    </div>
+    <div class="float-box">
+        float box
+    </div>
+    <div class="z-index-box">
+        z index box
+    </div>
+    <div class="rotate-box">
+        rotate box
+    </div>
+    <div class="translate-box">
+        translate box
+    </div>
+</body>
+</html>

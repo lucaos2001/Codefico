@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*{box-sizing: border-box;}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+
+.titulo {
+    color: #00FF37;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+h2 {
+    color: #00FF37;
+    text-align: center;
+    text-shadow: 2px 0px black;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li {
+    background-color: #00FF37;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.menu ul li:hover {
+    background-color: #00FF99;
+}
+
+.sobre, .requisitos, .certificado {
+    text-align: justify;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    display: none;
+}
+
+
+.meio::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (min-width: 767px){
+    .logo img {
+        display: inline;
+        max-width: 100%;
+        height: auto;
+    }
+    .titulo{font-size: 29px;}
+    .col-t-1{width: 8.33%;}
+    .col-t-2{width: 16.66%;}
+    .col-t-3{width: 25%;}
+    .col-t-4{width: 33.33%;}
+    .col-t-5{width: 41.66%;}
+    .col-t-6{width: 50%;}
+    .col-t-7{width: 58.33%;}
+    .col-t-8{width: 66.66%;}
+    .col-t-9{width: 75%;}
+    .col-t-10{width: 83.33%;}
+    .col-t-11{width: 91.66%;}
+    .col-t-12{width: 100%;}
+}
+
+@media only screen and (min-width: 1024px){
+    .logo img {
+        display: inline;
+        max-width: 100%;
+        height: auto;
+    }
+    .titulo{font-size: 36px;}
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}

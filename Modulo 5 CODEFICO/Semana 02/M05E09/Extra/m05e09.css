@@ -1,0 +1,139 @@
+body {
+  margin: 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: url(https://img.freepik.com/vetores-gratis/forma-fundo-do-enigma_1053-375.jpg?size=626&ext=jpg&ga=GA1.1.57369746.1698350245&semt=ais);
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+#hcb {
+  color: rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.menu a:hover{
+  color: #00FF37;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.cab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-image: url(https://img.freepik.com/vetores-gratis/fundo-hexagonal-escuro-com-cor-gradiente_79603-1410.jpg?w=900&t=st=1698350344~exp=1698350944~hmac=429b2058f3a7582b1abf5810f4cea0dea89c9e9d7f23a462e92e3ee765ba1284);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  animation: slide-in 2s ease forwards;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  font-size: 24px; 
+}
+
+.menu ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline; 
+  margin-right: 80px; 
+}
+
+.menu a {
+  text-decoration: none; 
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  animation: slide-in 2s ease forwards;
+}
+
+h2:hover {
+  color: #00FF37;
+  font-size: 41px;
+  text-shadow: 3px 3px 3px black;
+}
+
+.texto {
+  margin: 80px;
+  font-size: 20px;
+  animation: slide-in 2s ease forwards;
+}
+
+.texto b:hover {
+  color: #00FF37;
+  font-size: 20.1px;
+  text-shadow: 3px 3px 3px black;
+}
+
+.tabela table{
+  background-color: #0000001f;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  animation: slide-in 2s ease forwards;
+}
+
+.tabela th {
+  font-size: 25px;
+  background-color: #00FF37;
+}
+
+.tabela th, td {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.tabela td:hover{
+  background-color: #00FF37;  
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+#pnl {
+  text-align: center;
+  margin-top: 30px;
+  animation: slide-in 2s ease forwards;
+  margin: 20px;
+}
+
+#pnl button:hover {
+  background-color: #00FF37;  
+  box-shadow: 4px 4px 4px black;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.rodape {
+  text-align: center;
+  background-color: #0000001f;
+  animation: slide-in 2s ease forwards;
+}
+
+.rodape a {
+  text-decoration: none;
+  color: black;
+}
+
+.rodape a:hover {
+  color: #00FF37;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%); /* Inicia da esquerda */
+  }
+  to {
+    transform: translateX(0%); /* Termina na posição inicial */
+  }
+}
