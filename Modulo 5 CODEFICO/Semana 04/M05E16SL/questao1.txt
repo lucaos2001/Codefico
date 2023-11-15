@@ -1,0 +1,87 @@
+    Questão 1
+Responda as perguntas abaixo:
+
+1. O que sao objetos em JavaScript?
+    Objetos são estruturas de dados que geralmente consistem em diversas variáveis e funções que são chamadas de propriedades e métodos quando estão dentro de objetos. São uma ótima
+    maneira de organizar e trabalhar com dados em JavaScript.
+    
+    Exemplo:
+    var Pessoa = {
+        nome: "João",
+        idade: 30,
+        dormindo: false,
+        dormir: function() {
+            this.dormindo = true;
+            console.log(`${this.nome} está dormindo`)
+        }
+    }; 
+
+    Neste exemplo o objeto "Pessoa" possuí as seguintes propriedades, que são:
+    "nome", "idade" e "dormindo".
+    E possuí o metodo "dormir" que altera a propriedade "dormindo" como "true" quando a pessoa estiver dormindo.
+    
+
+2. O que são atributos em JavaScript?
+    São as informações que constituem um determinado objeto, eles possuem chave e um valor.
+    Exemplo:
+
+    var Pessoa = {
+        nome: "João",
+        idade: 30
+    }
+
+    No caso do objeto pessoa ela possuí os atributos "nome" e "idade".
+
+3. O que são métodos de classe em JavaScript?
+    São funções que são definidas no corpo de uma classe, podendo ser usadas para ações ou operações específicas relacionadas
+    ao objeto criado.
+    Exemplo:
+
+    class AnimalDeEstimacao {
+        constructor(nome, especie, idade) {
+            this.nome = nome;
+            this.especie = especie;
+            this.idade = idade;
+    }
+
+        //Método de classe
+        fazerBarulho() {
+            console.log(`A ${this.nome} está latindo!`);
+        }
+    }
+
+4. O que é uma classe em JavaScript?
+    Classe é como um molde utilizado para criar objetos, ela define propriedades e métodos cujos objetos criados apartir dela herdarão.
+
+5. O que é o construtor de uma classe em JavaScript?
+    O construtor de uma classe em JavaScript é um método especial usado para criar e inicializar os objetos que são criados a partir dessa classe
+    Exemplo:
+        constructor(nome, especie, idade)
+        Esse método construtor espera os três parametros, que são o nome, a espécie e a idade, quando um novo objeto é criado o construtor recebe essas informações e configura o objeto.
+
+6. Explique o conceito de herança de classes em JavaScript. De um exemplo de uma herança em JavaScript.
+    è um conceito que permite que uma classe(Filha ou subclasse) herde propriedades e métodos de outra classe(pai ou superclasse), sendo assim ela pode acessar as propriedades e métodos da classe pai
+    estendendo ou as modificando comnforme suas necessidades.
+    Exemplo:
+    // Classe pai ou superclasse
+    class Animal {
+    constructor(nome) {
+        this.nome = nome;
+    }
+
+    fazerBarulho() {
+        console.log('Barulho do animal');
+    }
+    }
+
+    // Classe filha ou subclasse que herda de Animal
+    class Cachorro extends Animal {
+    fazerBarulho() {
+        console.log('Au Au!');
+    }
+    }
+
+    // Criando uma instância da subclasse
+    const meuCachorro = new Cachorro('Rex');
+    console.log(meuCachorro.nome); // Saída: Rex
+    meuCachorro.fazerBarulho(); // Saída: Au Au!
