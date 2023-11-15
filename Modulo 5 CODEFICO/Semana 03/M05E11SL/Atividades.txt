@@ -1,0 +1,69 @@
+Questão 1:
+	1. NVM (Node Version Manager) é um gerenciador das versões do node.
+	
+	2. a. NPM (Node Package Manager) é uma ferrramenta utilizada no gerenciamento de pacotes de software em projetos Js e node.js.
+	     Ele permite a instalação, atualização e compartilhamento de bibliotecas e módulos, além de automatizar tarefas e controlar as dependências.
+
+	   b. O comando é usado para instalar o pacote "prompt-sync" a um projeto.Ele é utilizado para pegar os inputs do usuário para que possam ser 
+	     manipulados da melhor forma.
+
+	   c.No diretório do projeto Js que estivermos desenvolvendo.
+
+Questão 2:
+	const - faz com que a variável declarada seja constante, ou seja ela não poderá ser alterada.
+	var - fazem com que a variável possua um escopo global, ou seja ela poderá ser utilizada em qualquer momento do código. E também podem ser utilizadas antes mesmo de serem declaradas.
+	let - faz com que a variável possua um escopo em bloco, ou seja se ela for declarada dentro de uma função, ela só poderá ser utilizada lá dentro.
+
+Questão 3:
+Diga o que será impresso na tela após executar cada um dos códigos abaixo:
+
+- primeiro codigo
+var x = 5;
+function fun() {
+    var x = 6;
+    console.log(x);
+}
+console.log(x);
+
+- segundo codigo
+let x = 5;
+function fun() {
+    let x = 6;
+    console.log(x);
+}
+console.log(x);
+
+Em ambos os códigos não houve a chamada da função "fun()", portanto a variável local x dentro da função fun não será inicializada nem impressa no console. Em ambos os casos seriam impressos o número 5.
+
+Entretanto se houvesse a chamada da função nos códigos abaixo seriam impressos:
+- primeiro codigo
+var x = 5;
+function fun() {
+    var x = 6;
+    console.log(x);
+}
+fun() //chamada da função
+console.log(x);
+
+	O console iria imprimir os valores 6 e 5, nessa ordem. A variável "x" foi declarada como var dentro e fora da função, como a função foi chamada antes do console.log
+	o é atribuído um novo valor a variável que é impressa no console, logo após sai da função o valor é atribuído outro valor e impresso no console.
+
+- segundo codigo
+let x = 5;
+function fun() {
+    let x = 6;
+    console.log(x);
+}
+fun() //chamada da função
+console.log(x);
+
+	O console iria imprimir os valores 6 e 5, nessa ordem. Ambas variáveis "x" foram declaradas como let, e terão valor apenas no bloco na qual estão atribuídas, dentro da função
+	será 6 que será impresso no console, e quando sair da função será 5 que também será impresso no console.
+
+
+Questão 4:
+É possível editar o valor de uma variável (const), de uma lista (const) ou de um objeto (const)?
+	
+	Os valores da variável e da lista não possuem possibilidades de receber uma alteração de valor, mas um objeto é possível
+	fazer a alteração de seus valores, pois você está apenas modificando o objeto existente e não a variável em si.
+
