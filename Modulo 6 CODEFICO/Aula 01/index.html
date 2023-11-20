@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 01</title>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cabecalho"></div>
+
+  <script type="text/jsx">
+    const div = document.getElementById('cabecalho');
+    ReactDOM.render(<App />, div);
+
+    function App(){
+      return(
+        <div id="Control">
+          <Top />
+          <Panel />
+          <Profile />
+        </div>
+      );
+    }
+
+    function Top(){
+      return(
+        <div id="Top">
+          <img src="images/download.jpg" alt="Logo do app taskwave" />
+          <span>TaskWave</span>
+        </div>
+      );
+    }
+
+    function Panel(){
+      return(
+        <div id="Panel">
+          <ul>
+            <li>Minhas Áreas</li>
+            <li>+Área</li>
+            <li>Tarefas</li>
+            <li>Logout</li>
+          </ul>
+        </div>
+      );
+    }
+
+    function Profile(){
+      return(
+        <div id="Profile">
+          <span>Nome do usuário</span>
+          <img src="images/download.jpg" alt="imagem de perfil do usuário" />
+        </div>
+      );
+    }
+  </script>
+</body>
+</html>
