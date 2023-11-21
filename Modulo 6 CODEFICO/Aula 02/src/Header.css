@@ -1,0 +1,66 @@
+body {
+    background-color: aquamarine;
+}
+
+#Top{
+    text-align: center;
+}
+
+#Top span{
+    padding: 20px;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+#Top img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+img {
+    padding: 2px;
+    border: 0;
+}
+
+#Panel {
+    text-align: center;
+}
+
+#Panel ul{
+    justify-content: flex-end;
+}
+
+#Panel li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 30px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#Control {
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Profile{
+    text-align: center;
+    justify-content: flex-end;
+}
+
+#Profile span{
+    padding: 20px;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+#Profile img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
