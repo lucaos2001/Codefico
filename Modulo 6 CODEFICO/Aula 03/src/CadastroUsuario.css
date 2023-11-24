@@ -1,0 +1,68 @@
+body{
+    background-color: bisque;
+    margin: 15px;
+}
+
+span{
+    padding: 5px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    font-weight: bold;
+}
+
+#field{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+legend{
+    text-align: center;
+    font-weight: bold;
+}
+
+#Formulario{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+}
+
+#Formulario #Botoes{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+#Botoes .enviar{
+    padding: 3px;
+    border-radius: 10%;
+    background-color: rgb(10, 250, 10);
+}
+
+#Botoes .apagar{
+    padding: 3px;
+    border-radius: 10%;
+    background-color: rgb(240, 76, 76);
+    margin-left: 2px;
+}
+
+#DadosUsuarios li{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
